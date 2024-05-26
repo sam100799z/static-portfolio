@@ -62,7 +62,7 @@ p {
   line-height: 170%;
 }
 .lg {
-  padding: 19px 34px;
+  padding: 23px 50px;
   font-size: 16px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
@@ -76,14 +76,13 @@ p {
 }
 .pri {
   background-color: #5eead554;
-  /* background-color: white;  */
   color: #99f8ea;
-  /* color: black; */
 }
 .sec {
+  padding: 21px 48px;
   background-color: transparent;
   color: #5eead5de;
-  border: 0.5px solid #5eead4;
+  border: 1px solid #5eead4;
 }
 .sec:hover {
   border: 1px solid transparent;
@@ -303,9 +302,10 @@ a.downloadCV h4 {
 #contact {
   background-image: url("./img/new\ footer\ 2.png");
   background-color: transparent;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:calc(50%) 0;
+  /* background-position:calc(60%) 0; */
   height: 750px;
 }
 
@@ -467,6 +467,15 @@ a.downloadCV h4 {
   .rightExperience {
     gap: 80px;
   }
+  #contact {
+    background-image: url("./img/new\ footer\ 2.png");
+    background-color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:calc(55%) 0;
+    /* background-position:calc(60%) 0; */
+    height: 750px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -590,9 +599,9 @@ a.downloadCV h4 {
   }
   .contactContent button {
     margin-top: 12px;
-    padding: 10px;
-    width: 120px;
-    font-size: 10px;
+    padding: 15px;
+    width: 150px;
+    font-size: 11px;
     font-weight: 500;
     color: white;
     border: 1px solid white;
@@ -679,5 +688,14 @@ a.downloadCV h4 {
     width: 100%;
     font-size: 9px;
     margin-bottom: 0px;
+  }
+  #contact {
+    background-image: url("./img/new\ footer\ 2.png");
+    background-color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-position:calc(50%) 0; */
+    background-position:calc(60%) 0;
+    height: 750px;
   }
 }
