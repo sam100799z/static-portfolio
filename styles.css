@@ -476,7 +476,7 @@ a.downloadCV h4 {
   }
 
   #hero {
-    height: 600px;
+    height: 640px;
   }
 
   #heroContainer h1 {
@@ -499,13 +499,13 @@ a.downloadCV h4 {
     /* width: 300px; */
   }
   #heroButtons button {
-    width: 350px;
+    width: 300px;
   }
 
   #about {
     padding-top: 0px;
     height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
   .aboutContent {
     width: 100%;
@@ -527,9 +527,9 @@ a.downloadCV h4 {
     font-weight: 600;
   }
   .nameSkills h4 {
-    margin-top: 40px;
-    font-size: 16px;
-    font-weight: 500;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   .skillbtn {
@@ -560,7 +560,7 @@ a.downloadCV h4 {
 
   #contact {
     height: auto;
-    min-height: 500px;
+    min-height: 670px;
   }
 
   #contact-container {
@@ -611,7 +611,7 @@ a.downloadCV h4 {
   }
 
   #work {
-    height: auto;
+    height: 650px;
     padding-bottom: 30px;
     padding-top: 10px;
   }
@@ -620,10 +620,18 @@ a.downloadCV h4 {
   }
   a.downloadCV h4 {
     font-size: 14px;
-    margin-top: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .workContent{
+    flex-direction: column;
+  }
+  .hoverCompany h3
+  {
+    width: 100%;
   }
   .intern {
-    gap: 7px;
+    gap: 3px;
     flex-direction: column;
   }
   .hoverCompany h4 {
@@ -631,7 +639,7 @@ a.downloadCV h4 {
     font-size: 13.5px;
   }
   .internDetails p {
-    min-width: auto;
+    /* min-width: auto; */
 
     font-size: 11px;
     margin-top: 3px;
@@ -639,12 +647,14 @@ a.downloadCV h4 {
   }
   .rightExperience {
     gap: 50px;
+    width: 100%;
   }
   .achievements {
     margin-top: 20px;
   }
   .workSkills h1 {
     font-size: 48px;
+    text-align: left;
   }
   .workSkills h3 {
     font-size: 20px;
@@ -652,6 +662,7 @@ a.downloadCV h4 {
   }
   .rightExperience {
     padding-top: 13px;
+    gap: 50px;
   }
   .internDetails h3 {
     font-weight: 700;
@@ -666,5 +677,7 @@ a.downloadCV h4 {
   }
   .timeline {
     width: 100%;
+    font-size: 9px;
+    margin-bottom: 0px;
   }
 }
