@@ -457,7 +457,7 @@ a.downloadCV h4 {
     display: inline-block;
     border-bottom: 2px solid #8cffee66;
     color: #8cffeeac;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .sec:hover {
@@ -561,11 +561,6 @@ a.downloadCV h4 {
     background-color: transparent;
     color: #5eead5de;
     border: 1px solid #5eead4;
-  }
-  a.downloadCV h4:hover {
-    color: initial;
-    border-bottom: none;
-    transition: none;
   }
   .contactContent button:hover {
     background-color: initial;
@@ -742,6 +737,7 @@ a.downloadCV h4 {
     margin-bottom: 25px;
   }
   a.downloadCV h4:hover {
+    font-size: 14px;
     border-bottom: 2px solid #8cffee66;
     color: #8cffeeac;
     transition: none;
