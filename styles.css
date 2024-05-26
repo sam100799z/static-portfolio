@@ -457,7 +457,7 @@ a.downloadCV h4 {
     display: inline-block;
     border-bottom: 2px solid #8cffee66;
     color: #8cffeeac;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .sec:hover {
@@ -527,6 +527,12 @@ a.downloadCV h4 {
   a.downloadCV h4 {
     font-size: 15px;
     margin-top: 70px;
+  }
+  a.downloadCV h4:hover {
+    display: inline-block;
+    border-bottom: 2px solid #8cffee66;
+    color: #8cffeeac;
+    font-size: 15px;
   }
   .intern {
     flex-direction: column;
