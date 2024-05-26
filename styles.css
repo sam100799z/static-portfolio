@@ -88,9 +88,6 @@ p {
   border: 1px solid transparent;
 } */
 
-
-
-
 .lg {
   padding: 23px 50px;
   font-size: 16px;
@@ -104,19 +101,15 @@ p {
 
 .lg:hover {
   cursor: pointer;
-  background-color: #537a74;
   transition: all 0.3s ease;
-}
-
-.lg:focus {
-  outline: none; /* Remove the default focus outline */
-  /* background-color: initial; Reset any hover background color */
-  /* color: initial; Reset any hover text color */
 }
 
 .pri {
   background-color: #5eead554;
   color: #99f8ea;
+}
+.pri:hover {
+  background-color: #537a74;
 }
 
 .sec {
@@ -127,16 +120,9 @@ p {
 }
 
 .sec:hover {
+  background-color: #537a74;
   border: 1px solid transparent;
 }
-
-.sec:focus {
-  border: 1px solid #5eead4; /* Match the initial border color */
-}
-
-
-
-
 
 .skillbtn {
   padding: 10px 28px;
@@ -353,9 +339,9 @@ a.downloadCV h4 {
 #contact {
   background-image: url("./img/new\ footer\ 2.png");
   background-color: transparent;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:calc(50%) 0;
+  background-position: calc(50%) 0;
   /* background-position:calc(60%) 0; */
   height: 750px;
 }
@@ -413,9 +399,6 @@ a.downloadCV h4 {
   /* adding a little effect on hover */
   transition: 0.2s;
 }
-.contactContent button:focus {
-  border: 2px solid rgb(255, 255, 255); /* Match the initial border color */
-}
 
 .socialHandles {
   display: flex;
@@ -449,6 +432,44 @@ a.downloadCV h4 {
     justify-content: space-between;
     align-items: center;
   } */
+
+  .socialHandle img:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transition: none;
+  }
+  .contactContent button:hover {
+    padding: 16px 26px;
+    margin-top: 25px;
+    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    /* border: none; */
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 0;
+    width: 180px;
+  }
+
+  a.downloadCV h4:hover {
+    display: inline-block;
+    border-bottom: 2px solid #8cffee66;
+    color: #8cffeeac;
+    font-size: 20px;
+  }
+
+  .sec:hover {
+    background-color: transparent;
+    border: 1px solid #5eead5;
+  }
+
+  .pri:hover {
+    background-color: #5eead554;
+    color: #99f8ea;
+  }
+
   .container {
     width: 90%;
     margin: auto;
@@ -524,15 +545,40 @@ a.downloadCV h4 {
   #contact {
     background-image: url("./img/new\ footer\ 2.png");
     background-color: transparent;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:calc(55%) 0;
+    background-position: calc(55%) 0;
     /* background-position:calc(60%) 0; */
     height: 750px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .pri:hover {
+    background-color: #5eead554;
+  }
+  .sec:hover {
+    background-color: transparent;
+    color: #5eead5de;
+    border: 1px solid #5eead4;
+  }
+  a.downloadCV h4:hover {
+    color: initial;
+    border-bottom: none;
+    transition: none;
+  }
+  .contactContent button:hover {
+    background-color: initial;
+    border: none;
+    /* adding a little effect on hover */
+    transition: 0.2s;
+  }
+  .socialHandle img:hover {
+    cursor: none;
+    transform: scale(1);
+    transition: none;
+  }
+
   #container {
     width: 100%;
     padding: 0 10px;
@@ -660,6 +706,15 @@ a.downloadCV h4 {
     color: white;
     border: 1px solid white;
   }
+  .contactContent button:hover {
+    margin-top: 12px;
+    padding: 15px;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid white;
+  }
   .socialHandles {
     margin-top: 40px;
   }
@@ -686,11 +741,20 @@ a.downloadCV h4 {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .workContent{
+  a.downloadCV h4:hover {
+    border-bottom: 2px solid #8cffee66;
+    color: #8cffeeac;
+    transition: none;
+  }
+  /* a.downloadCV h4:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+  } */
+  .workContent {
     flex-direction: column;
   }
-  .hoverCompany h3
-  {
+  .hoverCompany h3 {
     width: 100%;
   }
   .intern {
@@ -746,10 +810,10 @@ a.downloadCV h4 {
   #contact {
     background-image: url("./img/new\ footer\ 2.png");
     background-color: transparent;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-position:calc(50%) 0; */
-    background-position:calc(60%) 0;
+    background-position: calc(60%) 0;
     height: 750px;
   }
 }
