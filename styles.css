@@ -105,59 +105,7 @@ h4 {
 
 
 
-
-
 /* start your styling from here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* hero content */
@@ -182,9 +130,6 @@ h4 {
   display: flex;
   gap: 20px;
 }
-
-
-
 
 
 
@@ -280,11 +225,6 @@ h4 {
 
 
 
-
-
-
-
-
 /* experience */
 
 
@@ -317,9 +257,6 @@ a.downloadCV h4
   font-size: 20px;
   margin-top: 100px;
 }
-
-
-
 
 
 
@@ -468,14 +405,11 @@ a.downloadCV h4
   font-weight: 700;
   border-radius: 0;
   width: 180px;
-  /* background-color: rgba(0, 0, 0, 0.432); */
-  /* background-color: rgba(0, 0, 0, 0.363); */
 }
 .contactContent button:hover
 {
   background-color: rgba(255, 255, 255, 0.29);
   border: 2px solid transparent;
-  /* adding a little effect on hover */
   transition: 0.2s;
 }
 
@@ -498,8 +432,6 @@ a.downloadCV h4
 
 
 
-
-
 /* Media queries for responsiveness */
 
 
@@ -518,11 +450,6 @@ a.downloadCV h4
 
 @media only screen and (max-width: 900px) {
   
-  /* .section 
-  {
-    justify-content: space-between;
-    align-items: center;
-  } */
   .container
   {
     width: 90%;
