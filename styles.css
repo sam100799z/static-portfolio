@@ -13,13 +13,27 @@ body {
 }
 .section {
   height: 800px;
-  background-color: black;
+  background-color: transparent;
+  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   /* border: 1px solid white; */
 }
+
+
+
+
+.animation {
+  background-color: black;
+  transition: background-color 1s ease-in-out;
+}
+
+
+
+
+
 .container {
   width: 80%;
   /* max-width: 80%; */
@@ -138,6 +152,21 @@ p {
 /* start your styling from here */
 
 /* hero content */
+#hero {
+  background-color: transparent;
+  /* background-color: black; */
+}
+canvas {
+  position: fixed;
+  top: auto;
+  left: auto;
+  background-color: black;
+  z-index: -1;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-size: auto;
+  scroll-behavior: smooth;
+}
 #heroContainer {
   display: flex;
   flex-direction: column;
@@ -163,8 +192,8 @@ p {
 /* about section */
 
 #about {
-  background-color: black;
   height: 700px;
+  padding-top: 40px;
   /* border: 1px solid #5eead4; */
 }
 #aboutContainer {
@@ -334,6 +363,70 @@ a.downloadCV h4 {
   color: #8cffeea7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding-top: 100px;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.logos:hover .logos-slide {
+  animation-play-state: running;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 32s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 35px;
+  margin: 0 40px;
+}
+
 /* contact */
 
 #contact {
@@ -432,6 +525,10 @@ a.downloadCV h4 {
     justify-content: space-between;
     align-items: center;
   } */
+
+  .logos:hover .logos-slide {
+    animation-play-state: running;
+  }
 
   .socialHandle img:hover {
     cursor: pointer;
@@ -808,6 +905,20 @@ a.downloadCV h4 {
     width: 100%;
     font-size: 9px;
     margin-bottom: 0px;
+  }
+  .logos {
+    overflow: hidden;
+    padding-top: 50px;
+    background: black;
+    white-space: nowrap;
+    position: relative;
+  }
+  .logos-slide img {
+    height: 20px;
+    margin: 0 20px;
+  }
+  .logos:hover .logos-slide {
+    animation-play-state: running;
   }
   #contact {
     background-image: url("./img/new\ footer\ 2.png");
