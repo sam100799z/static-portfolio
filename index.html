@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saikumar Andure - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
-    <section class="section" id="hero">
+
+    <canvas id="matrixCanvas"></canvas>
+    <!-- Matrix -->
+    <script src="./index.js"></script>
+
+
+
+    <section class="section transition yo" id="hero">
         <div class="container" id="heroContainer">
-            <h1 class="main_heading"><span id="typed">Hi. I'm Saikumar</span></h1>
+            <h1 class="main_heading"><span id="typed"></span></h1>
+            <!-- <h1 class="main_heading"><span id="typed">Hi. I'm Saikumar</span></h1> -->
             <h2 id="sub_heading">Cyber security expert.</h2>
             <p id="paragraph">
                 I am a dedicated security researcher, I have honed my expertise in identifying vulnerabilities and
@@ -28,7 +37,7 @@
 
 
 
-    <section class="section hidden" id="about">
+    <section class="section transition" id="about">
         <div class="container" id="aboutContainer">
 
 
@@ -99,7 +108,7 @@
 
 
 
-                        
+
                     </div>
 
                 </div>
@@ -126,7 +135,7 @@
 
 
 
-    <section class="section" id="work">
+    <section class="section transition" id="work">
 
 
 
@@ -216,10 +225,25 @@
 
 
 
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="./img/0a3bdd0407f0499fd3c084d8eaec2cdaf2c113b4-382x226.webp" />
+                    <img src="./img/AmahaLogo.svg" />
+                    <img src="./img/Logo.svg" />
+                    <img src="./img/image.svg" />
+                    <img src="./img/kahoot-white.svg" />
+                    <img src="./img/redbullcom-logo_double-with-text.svg" />
+                    <img src="./img/sfx_logo.svg" />
+                </div>
+            </div>
+
 
 
 
         </div>
+
+
+
 
 
     </section>
@@ -289,8 +313,11 @@
 
 
                 <p class="madeWith">Made with ❤️ by a friend.</p>
-                <p class="madeWith" style=" font-size: 8px ; ">Used icons from <a href="https://www.svgrepo.com/" 
-                    style=" text-decoration: none; color: rgb(223, 223, 223); " target="_blank" >svgrepo</a>.</p>
+                <p class="madeWith" style=" font-size: 8px ; ">Used icons from <a href="https://www.svgrepo.com/"
+                        style=" text-decoration: none; color: rgb(223, 223, 223); " target="_blank">svgrepo</a>.</p>
+
+
+
 
 
 
@@ -316,6 +343,55 @@
 
 
 </body>
-<script src="./index.js"></script>
+<script>
+
+
+    const typedText = document.getElementById("typed");
+    const sentences = [
+        "Hi. I'm Saikumar",
+    ]; // Array of sentences for the typing animation
+    let currentSentenceIndex = 0; // Index for keeping track of the current sentence
+
+    function typingEffect() {
+        const currentSentence = sentences[currentSentenceIndex];
+        const textArray = currentSentence.split(""); // Split the current sentence into characters
+        let i = 0; // Index for iterating through the character array
+
+        function typeChar() {
+            if (i < textArray.length) {
+                typedText.textContent += textArray[i];
+                i++;
+                setTimeout(typeChar, 80); // Delay between character appearances
+            } else {
+                // Stop after typing the sentence
+                return; // Exit the function after completing the current sentence
+            }
+        }
+
+        typeChar(); // Start typing the current sentence
+    }
+
+    typingEffect(); // Start the typing animation with the first sentence
+
+
+
+
+
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const transitionElements = document.querySelectorAll(".transition");
+  
+    setTimeout(function() {
+      transitionElements.forEach(function(element) {
+        element.classList.add("animation");
+      });
+    }, 10000); // Wait for 10 seconds (1000 milliseconds)
+  });
+
+
+</script>
 
 </html>
